@@ -13,7 +13,7 @@ var alpha, beta, lerpVar;
 var deltaX=0;
 var deltaY=0;
 var mult1=0;
-var mult2=2;
+var mult2=5;
 function draw() {
 
   background(10,30,40);
@@ -41,8 +41,8 @@ function draw() {
     //fill(lerpColor(color(200,30,255,10), color(255,200,30,10), lerpVar));
     //line(mouseX-windowWidth/2,mouseY-windowHeight/2,cos(alpha)*radius+deltaX,sin(alpha)*radius+deltaY);
     bezier(mouseX-windowWidth/2, mouseY-windowHeight/2,
-     (cos(alpha)*radius/2+deltaX+mouseX-windowWidth/2)*.92, (sin(alpha)*radius/2+deltaY+mouseY-windowHeight/2)*.92,
-     (cos(alpha)*radius+deltaX)*.6,(sin(alpha)*radius+deltaY)*.6, cos(alpha)*radius+deltaX,sin(alpha)*radius+deltaY);
+     (cos(alpha+60)*radius*.5+deltaX+mouseX-windowWidth/2)*.92, (sin(alpha+60)*radius*.5+deltaY+mouseY-windowHeight/2)*.92,
+     (cos(alpha+30)*radius+deltaX)*.8,(sin(alpha+30)*radius+deltaY)*.8, cos(alpha)*radius+deltaX,sin(alpha)*radius+deltaY);
   }
 
 
