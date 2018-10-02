@@ -27,7 +27,7 @@ function draw() {
     mult2=3;
     mult1=0;
   }*/
-  for (alpha=0; alpha<360; alpha=alpha+3) {
+  for (alpha=0; alpha<360; alpha=alpha+5) {
     deltaX=cos((frameCount*2+alpha*7)%360)*15;
     deltaY=sin((frameCount*2+alpha*7)%360)*15;
     beta=(alpha+frameCount*mult2)%360;
