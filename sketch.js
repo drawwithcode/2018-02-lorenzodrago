@@ -13,7 +13,7 @@ var alpha, beta, lerpVar;
 var deltaX=0;
 var deltaY=0;
 var mult1=0;
-var mult2=2;
+var mult2=5;
 function draw() {
 
   background(10,30,40);
@@ -27,7 +27,7 @@ function draw() {
     mult2=3;
     mult1=0;
   }*/
-  for (alpha=0; alpha<360; alpha=alpha+5) {
+  for (alpha=0; alpha<360; alpha=alpha+3) {
     deltaX=cos((frameCount*2+alpha*7)%360)*15;
     deltaY=sin((frameCount*2+alpha*7)%360)*15;
     beta=(alpha+frameCount*mult2)%360;
