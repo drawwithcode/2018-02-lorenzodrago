@@ -7,6 +7,8 @@ function setup() {
   frameRate(60);
   noCursor();
   noFill();
+  mouseX = width/2;
+  mouseY = height/2;
 }
 var radius = 300;
 var alpha, beta, lerpVar;
